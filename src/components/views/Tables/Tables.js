@@ -14,9 +14,9 @@ import Button from '@material-ui/core/Button';
 const demoContent = [
   {id: '1', status: 'free', order: null},
   {id: '2', status: 'reserved', order: 10},
-  {id: '3', status: 'reserved', order: 20},
-  {id: '4', status: 'event', order: 30},
   {id: '5', status: 'free', order: null},
+  {id: '4', status: 'event', order: 30},
+
 ];
 
 const renderActions = status => {
@@ -36,6 +36,11 @@ const renderActions = status => {
 
 const Tables = () => (
   <Paper className={styles.component}>
+    <Button><Link to='/tables/booking/:id'>Booking</Link></Button>
+    <Button><Link to='/tables/booking/new'>New booking</Link></Button>
+    <Button><Link to='/tables/events/:id'>Events</Link></Button>
+    <Button><Link to='/tables/events/new'>New events</Link></Button>
+    <br></br>
     <Table>
       <TableHead>
         <TableRow>

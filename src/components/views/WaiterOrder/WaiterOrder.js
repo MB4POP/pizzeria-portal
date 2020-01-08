@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../Waiter/Waiter.scss';
-
+import { Link } from 'react-router-dom';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -21,6 +21,9 @@ const demoContent = [
 
 const WaiterOrder = () => (
   <Paper className={styles.component}>
+    <Button>
+      <Link to='/waiter'>Booking</Link>
+    </Button>
     <Table>
       <TableHead>
         <TableRow>
