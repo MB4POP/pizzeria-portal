@@ -11,10 +11,10 @@ import Button from '@material-ui/core/Button';
 
 
 const demoContent = [
-  {id: '1', status: 'ordered', order: 12},
-  {id: '2', status: 'ordered', order: 15},
-  {id: '3', status: 'ordered', order: 21},
-  {id: '4', status: 'done', order: 33},
+  {id: '1', status: 'ordered', order: 10},
+  {id: '2', status: 'ordered', order: 11},
+  {id: '3', status: 'ordered', order: 12},
+  {id: '4', status: 'done', order: 15},
 ];
 
 const renderActions = status => {

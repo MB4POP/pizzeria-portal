@@ -26,19 +26,14 @@ class Waiter extends React.Component {
     fetchTables();
   }
 
-  changeOfStatus(e, id){
-    e.preventDefault();
-    const { changeStatus } = this.props;
-    changeStatus(id);
-  }
 
-  renderActions(status, id){
+  renderActions(status){
     switch (status) {
       case 'free':
         return (
           <>
             <Button>thinking</Button>
-            <Button onClick={(e) => this.changeOfStatus(e, id)}>new order</Button>
+            <Button>new order</Button>
           </>
         );
       case 'thinking':
